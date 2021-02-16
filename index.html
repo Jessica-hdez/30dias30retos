@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>30Días 30retos</title>
+</head>
+<body>
+    <div class="container">
+      <div class="image">
+        <div class="content">
+          <div class="text">
+            <h2>¡Bienvenidos a los 30 retos en 30 días!</h2>
+            <p>Este es un proyecto con fines académicos, donde nos retamos a realizar 
+              cortos ejercicios en los cuales aplicamos lenguajes como HTML, CSS y JS. 
+              Aquí encontrarás pequeños bloques funcionales para que entiendas su
+              funcionamiento y así los puedas aplicar en tus sitios.</p>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..." autocomplete="off">
+        <table id="myTable">
+          <tr><td><a href="Reto_7_AutoText/index.html" target="_blank">Auto Text</a></td></tr>
+          <tr><td><a href="Reto_15_BackgroundSlider/index.html" target="_blank">Background Slider</a></td></tr>
+          <tr><td><a href="Reto_5_BlurryLoading/index.html" target="_blank">Blurry Loading</a></td></tr>
+          <tr><td><a href="Reto_14_ButtonRippleEffect/index.html" target="_blank">Button Ripple Effect</a></td></tr>
+          <tr><td><a href="Reto_11_DadJokes/index.html" target="_blank">Dad Jokes</a></td></tr>
+          <tr><td><a href="Reto_20_DobleClickHeart/index.html" target="_blank">Doble Click Heart</a></td></tr>
+          <tr><td><a href="Reto_6_DragNDrop/index.html" target="_blank">Drag N Drop</a></td></tr>
+          <tr><td><a href="Reto_23_DrinkWater/index.html" target="_blank">Drink Water</a></td></tr>
+          <tr><td><a href="Reto_21_EventKeycodes/index.html" target="_blank">Event Keycodes</a></td></tr>
+          <tr><td><a href="Reto_1_ExpandingCard/index.html" target="_blank">Expanding Card</a></td></tr>
+          <tr><td><a href="Reto_29_FAQCollapse/index.html" target="_blank">FAQ Collapse</a></td></tr>
+          <tr><td><a href="Reto_24_FeedbackUIDesign/index.html" target="_blank">Feedback UI Design</a></td></tr>
+          <tr><td><a href="Reto_10_FormInputWave/index.html" target="_blank">Form Input Wave</a></td></tr>
+          <tr><td><a href="Reto_25_GitHubProfile/index.html" target="_blank">GitHub Profile</a></td></tr>
+          <tr><td><a href="Reto_4_HiddenSearch/index.html" target="_blank">Hidden Search</a></td></tr>
+          <tr><td><a href="Reto_8_Hoverboard/index.html" target="_blank">Hoverboard</a></td></tr>
+          <tr><td><a href="Reto_28_IncrementingCounter/index.html" target="_blank">Incrementing Counter</a></td></tr>
+          <tr><td><a href="Reto_16_KineticLoader/index.html" target="_blank">Kinetic Loader</a></td></tr>
+          <tr><td><a href="Reto_13_LiveUserFilter/index.html" target="_blank">Live User Filter</a></td></tr>
+          <tr><td><a href="Reto_22_MobileNavNavigation/index.html" target="_blank">Mobile Nav Navigation</a></td></tr>
+          <tr><td><a href="Reto_17_NetflixNavigation/index.html" target="_blank">Netflix Navigation</a></td></tr>
+          <tr><td><a href="Reto_19_Pokedex/index.html" target="_blank">Pokedex</a></td></tr>
+          <tr><td><a href="Reto_2_ProgressSteps/index.html" target="_blank">Progress Steps</a></td></tr>
+          <tr><td><a href="Reto_3_RotatingNavigation/index.html" target="_blank">Rotating Navigation</a></td></tr>
+          <tr><td><a href="Reto_9_ScrollAnimation/index.html" target="_blank">Scroll Animation</a></td></tr>
+          <tr><td><a href="Reto_12_SoundBoard/index.html" target="_blank">Sound Board</a></td></tr>
+          <tr><td><a href="Reto_27_SplitLandingPage/index.html" target="_blank">Split Landing Page</a></td></tr>
+          <tr><td><a href="Reto_26_StickyNavigation/index.html" target="_blank">Sticky Navigation</a></td></tr>
+          <tr><td><a href="Reto_18_TestimonialBoxSwitcher/index.html" target="_blank">Testimonial Box Switcher</a></td></tr>
+          <tr><td><a href="Reto_30_ToastNotifications/index.html" target="_blank">Toast Notifications</a></td></tr>
+        </table>
+
+        
+        <footer id="footer">
+          <p>Copyright &copy; 2020 Pioneros
+          <br>Designed by Jess</p>
+        </footer>
+      </div>
+    </div>
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+        
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .empty {
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    margin: 1rem;
+    box-shadow: 2px 2px 10px slategray;
+  }
+  
+  .fill {
+    background-image: url('https://www.hitc.com/static/uploads/2020/05/Sky-2-150x150.jpg');
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+  }
+  
+  .hold {
+    border: solid 3px darkslategray;
+  }
+  
+  .hovered {
+    background-color: lightblue;
+    border-style: dashed;
+  }
+  .delete {
+      opacity: 0;
+  }
+  
+  @media (max-width: 800px) {
+  }
